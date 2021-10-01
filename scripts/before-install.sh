@@ -1,7 +1,8 @@
 #!/bin/bash
 
-apt-get update
-apt-get install -y nodejs
-apt-get install -y npm
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh -o install_nvm.sh
+bash install_nvm.sh
+source ~/.profile
+nvm install 18.14.0
 
 npm install forever -g
