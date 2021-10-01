@@ -1,8 +1,8 @@
 #!/bin/bash
 
-curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh -o install_nvm.sh
-bash install_nvm.sh
-source ~/.profile
-nvm install 18.14.0
+apt-get update
+apt-get install ca-certificates
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 npm install forever -g
